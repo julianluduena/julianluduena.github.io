@@ -1,0 +1,217 @@
+
+ * {
+    color:black;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+    width:90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size:50px;
+    font-family: 'Inter', sans-serif;
+    margin-top:80px;
+    padding-left:60px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  background-color: #f3f3f3;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size:32px;
+    padding-left:20px;
+    margin-top:30px;
+  }}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight:bold;
+  margin-top:60px;
+}
+
+h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin-top:-30px;
+  padding-left:60px;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    margin-top:-20px;
+    padding-left:20px;
+  }}
+
+.foto {
+    width: 300px;
+    height:auto;
+    float: left;
+
+}
+
+/* Subrayado amarillo*/
+.separador {
+  width:60px;
+  height:4px;
+  background-color: #fee14a;
+  margin:-20px 0 30px;
+}
+
+/* Columnas de encabezado */
+
+.column-dis {
+    float: left;
+    background-color: #fee14a;
+    padding-left:0px;
+    height:300px;
+  }
+  
+   .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column-dis {
+      width: 100%;
+    }
+
+  }
+  
+  /* Clear floats after the columns */
+  .row-dis:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+  /* Columas de informacion */
+  .column-left {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 50%;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .column-left {
+      width: 100%;
+      margin-top:-80px;
+      z-index: 100;
+    }
+  }
+
+  .column-right {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 50%;
+    padding: 50px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column-right {
+      width: 100%;
+      padding-top:10px;
+    }
+  }
+
+   /* Clear floats after the columns */
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .fa-phone, .fa-envelope, .fa-location-dot  {
+    margin:0 20px 20px;
+    color: Tomato;
+  }
+
+  .fa-caret-right {
+  margin:0 20px 20px;
+  color: Tomato;
+}
+
+button {
+  cursor:pointer;
+  background-color: #ffffff;
+  padding:12px;
+  margin:0 0 20px;
+  
+}
+
+  #ph, #ae {
+    display:none;
+    font-weight:bold;
+  }
+
+  
+  /* The Modal (background) */
+.modal, .modal2, .modal3, .modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content, .modal-content2, .modal-content3, .modal-content4 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close, .close2, .close3, .close4 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close, .close2, .close3, .close4:hover,
+.close, .close2, .close3, .close4:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
